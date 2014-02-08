@@ -269,10 +269,13 @@ nnoremap <silent> <Plug>unimpairedPutBelow :call <SID>putline(']p')<CR>
 
 nmap [p <Plug>unimpairedPutAbove
 nmap ]p <Plug>unimpairedPutBelow
-nnoremap <silent> >P :call <SID>putline('[p')<CR>>']
-nnoremap <silent> >p :call <SID>putline(']p')<CR>>']
-nnoremap <silent> <P :call <SID>putline('[p')<CR><']
-nnoremap <silent> <p :call <SID>putline(']p')<CR><']
+
+" Disabled these as they are conflicted with paredit
+"nnoremap <silent> >P :call <SID>putline('[p')<CR>>']
+"nnoremap <silent> >p :call <SID>putline(']p')<CR>>']
+"nnoremap <silent> <P :call <SID>putline('[p')<CR><']
+"nnoremap <silent> <p :call <SID>putline(']p')<CR><']
+
 nnoremap <silent> =P :call <SID>putline('[p')<CR>=']
 nnoremap <silent> =p :call <SID>putline(']p')<CR>=']
 
